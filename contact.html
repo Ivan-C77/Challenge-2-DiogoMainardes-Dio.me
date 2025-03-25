@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica +Sua Vida</title>
+    <link rel="stylesheet" href="base.css">
+
+    <style>
+         /* ↓↓ header ↓↓ */
+        .header{
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+         
+         /* ↓↓ Content ↓↓ */
+        .Myfieldset {
+            max-width: 100%; 
+            padding: 15px;
+            border-radius: 10px;
+            border-color: rgba(22, 160, 210, 0.482);
+            font-family: Arial, sans-serif;
+        }
+
+        .legenda {
+            color: rgb(18, 50, 195);
+        }
+
+        span {
+            color: #4782f7;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 155px;
+        }
+
+        .container iframe {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        .texto {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .balao {
+            margin: 50px;
+            margin-top: 1px;
+            display: inline-block;
+            border-radius: 15px;
+            background: linear-gradient(rgb(124, 209, 246), rgb(9, 112, 215));
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+            padding: 5px 30px;
+            text-align:center;
+            flex-shrink: 0;
+        }
+
+        .numeros {
+            color: white;
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 400px;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        /* ↓↓ footer ↓↓ */
+        .rclinica {
+            color: white;
+            margin-left: 2%;
+        }
+
+        .compromisso {
+            color: white;
+            margin-left: 2%;
+        }
+
+        .contato {
+            color: white;
+            margin-left: 2%;
+        }
+        
+        .direitos {
+            color: white;
+            margin-block-start: 5%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            
+            <ul>
+                <li><a href="home_page.html"><strong>Voltar ao Início</strong></a></li>
+                <li><a href="about_the_clinic.html"><strong>Sobre a Clínica</strong></a></li>
+                <li><a href="opening_hours.html"><strong>Horário de Atendimento</strong></a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="images/Cuidamos de Você4.png" alt="Imagem da Clinica" />
+                
+            </div>
+
+            <div class="content">
+                <h1>Contatos</h1>
+                <fieldset class="Myfieldset">
+                    <legend class="legenda">Informações Úteis</legend>
+                        <h3 class="texto">Para contactar a <span>Clínica +Sua Vida</span>, entre em contato pelos telefones de contato abaixo e veja onde também nos encontrar:</h3>
+                        
+                        <div class="container">
+                            <div class="balao">
+                                <p><Strong>Celular:</Strong></p>
+                                    <span class="numeros"><strong>83 4002-8922</strong></span>
+                                <p><strong>WhatsApp:</strong></p>
+                                    <span class="numeros"><strong>83 4002-8922</strong></span>
+                            </div>
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d34679.459252624336!
+                                2d-46.527003!3d-23.658912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce69d536766bcf%3A0xb70f2179599dfda9!
+                                2sCentro%2C%20Santo%20Andr%C3%A9%20-%20SP!5e1!3m2!1spt-BR!2sbr!4v1742506369663!5m2!1spt-BR!2sbr" 
+                                 style="border:0;" allowfullscreen="" loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        <h4>Centro Santo André, SP - Cnpj: 57.418.365/0001-58... Perto de 'Casmar Odontologia'.</h4>
+                        
+                </fieldset>
+                
+                <H1>Formulario de Contato, caso necessário:</H1>
+                
+                <form name="Contact" method="GET" action="#">
+                    <div class="form">
+                        <label>Nome: <input type="text" name="Name"></label>
+                        <label>E-mail: <input type="email" name="E-mail"></label><br>
+                        <label>Assunto: <input type="text" name="Subject"></label><br>
+                        <select name="location">
+                            <option value="selecione">Selecione a localidade</option>
+                            <option value="alagoas">Alagoas</option>
+                            <option value="bahia">Bahia</option>
+                            <option value="ceara">Ceará</option>
+                            <option value="maranhao">Maranhão</option>
+                            <option value="paraiba">Paraíba</option>
+                            <option value="pernambuco">Pernambuco</option>
+                            <option value="piaui">Piauí</option>
+                            <option value="rio grande do norte">Rio Grande do norte</option>
+                            <option value="sergipe">Sergipe</option>
+                        </select><br>
+                        <label>Mensagem:</label>
+                        <textarea rows="10" cols="50" name="message"></textarea><br>
+                    </div>
+
+                    <button type="submit" onclick="alert('Enviado com Sucesso!')">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+                
+            </div>
+    
+            <div class="footer">
+                <h2 class="rclinica">Clínica +Sua Vida</h2>
+                <p class="compromisso">Desde 2010, em compromisso com você!</p>
+                <p class="contato">Todos os contatos podem ser acessados apartir do menu.</p>
+                <p class="direitos" align="center">2025 © Todos os direitos reservados.</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

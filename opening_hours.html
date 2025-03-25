@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica +Sua Vida</title>
+    <link rel="stylesheet" href="base.css">
+
+    <style>
+        
+        /* ↓↓ header ↓↓ */
+        .header{
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+         }
+
+        /* ↓↓ Content ↓↓ */
+        .myfieldset {
+            border-radius: 15px;
+            border-color: rgba(22, 160, 210, 0.482);
+        }
+
+        .imagem img {
+            border: solid 1px;
+            border-radius: 15px;
+            border-color: rgb(22, 160, 210, 0.482);
+            margin-top: 20px;
+            margin-bottom: auto;
+        }
+
+        table {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            width: 950px;
+            height: auto;
+            border: solid 1px rgb(211, 214, 214); 
+            border-radius: 3px;
+            -webkit-box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.75);
+            font-family: sans-serif;
+        }
+
+        table thead th {
+            background-color: rgb(7, 23, 102);
+            color: white;
+            font-size: 17px;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: rgb(209, 232, 251);
+        
+        }
+        
+        table tbody tr:hover td {
+            background-color: rgb(100, 204, 245);
+            cursor: pointer;
+        }
+
+        table tbody td:not(:last-child) {
+            text-align-last: center;
+        }
+
+        tr :nth-child(1) {
+            font-weight: bold;
+        }
+
+        td:last-child {
+            text-align: center;
+            background-color: rgb(43, 150, 249);
+            font-weight: bold;
+        }
+
+        /* ↓↓ footer ↓↓ */
+        .rclinica {
+            color: white;
+            margin-left: 2%;
+        }
+
+        .compromisso {
+            color: white;
+            margin-left: 2%;
+        }
+
+        .contato {
+            color: white;
+            margin-left: 2%;
+        }
+
+        .direitos {
+            color: white;
+            margin-block-start: 5%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            
+            <ul>
+                <li><a href="home_page.html"><strong>Voltar ao Início</strong></a></li>
+                <li><a href="about_the_clinic.html"><strong>Sobre a Clínica</strong></a></li>
+                <li><a href="contact.html"><strong>Contatos</strong></a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="images/Cuidamos de Você3.png" alt="Imagem da Clinica" />
+                
+            </div>
+            
+            <div class="content">
+                <H1>Horário de atendimento e Profissionais disponíveis</H1>
+                    <fieldset class="myfieldset">
+                            <p>  Falando sobre o nosso atendimento, temos muito orgulho de dizer sobre
+                                 os profissionais que estão conosco, pois são formados na área com louvor 
+                                 e são verdadeiramente qualificados, temos muita confiança ao falar 
+                                 sobre isso, a nossa excelência em comprometimento com você, 
+                                 acontece por causa deles.</p>
+                            <p>  Veja os profissionais da saúde que você encontra em nossos serviços juntamente
+                                 com o horário de atendimento a seguir e agende sua consulta já:</p>    
+                    </fieldset>
+
+                    <div class="imagem">
+                        <img src="images/nurse3.jpg" alt="Enfermeira" width="250">
+                    </div>
+                    
+            </div>
+            
+            <table cellspacing="3" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>Serviços:</th>
+                        <th>Segunda a Sexta:</th>
+                        <th>Sábados:</th>
+                        <th>Feriados:</th>
+                        <th>Preços:</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Cardiologista</td>
+                        <td>08:30h - 16:00h </td>
+                        <td>08:30h - 13:30h </td>
+                        <td>--</td>
+                        <td>250.00 R$</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Dermatologista</td>
+                        <td>08:30h - 16:00h </td>
+                        <td>08:30h - 13:30h </td>
+                        <td>--</td>
+                        <td>200.00 R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Endocrinologista</td>
+                        <td>08:30h - 16:00h </td>
+                        <td>08:30h - 14:00h </td>
+                        <td>08:30h - 11:00h </td>
+                        <td>280.00 R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gastroenterologista</td>
+                        <td>08:30h - 16:00h </td>
+                        <td>08:30h - 13:30h </td>
+                        <td>--</td>
+                        <td>120.00 R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ginecologista</td>
+                        <td>08:30h - 15:00h </td>
+                        <td>08:30h - 13:30h </td>
+                        <td>--</td>
+                        <td>180.00 R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mastologista</td>
+                        <td>08:30h - 15:00h </td>
+                        <td>08:30h - 14:00h </td>
+                        <td>08:30h - 11:00h </td>
+                        <td>65.00 R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pneumologista</td>
+                        <td>08:30h - 16:00h </td>
+                        <td>08:30h - 13:30h </td>
+                        <td>08:30h - 11:00h</td>
+                        <td>150.00 R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Reumatologista</td>
+                        <td>08:30h - 15:00h </td>
+                        <td>08:30h - 14:00h </td>
+                        <td>08:30h - 11:00h</td>
+                        <td>150.00 R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Urologista</td>
+                        <td>08:30h - 16:00h </td>
+                        <td>08:30h - 14:00h </td>
+                        <td>--</td>
+                        <td>170.00 R$</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+    
+            <div class="footer">
+                <h2 class="rclinica">Clínica +Sua Vida</h2>
+                <p class="compromisso">Desde 2010, em compromisso com você!</p>
+                <p class="contato">Todos os contatos podem ser acessados apartir do menu.</p>
+                <p class="direitos" align="center">2025 © Todos os direitos reservados.</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
